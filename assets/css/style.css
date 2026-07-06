@@ -66,3 +66,16 @@ background-color:var(--celeste) ;
   height: 200px;      /* ajusta a tu diseño */
   object-fit: cover;  /* recorta sin deformar */
 }
+.cont-footer{
+    background-color: var();
+}
+
+
+#footer-section{
+    background-color: var(--celeste);
+    padding: 1%;
+}
+.tamano-icon{
+    font-size: 40px;
+    color: var(--blanco);
+}
