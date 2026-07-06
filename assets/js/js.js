@@ -8,10 +8,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target.scrollIntoView({
         behavior: "smooth"
       });
+
+      // Cerrar el menú hamburguesa si está abierto
+      const menu = document.querySelector(".navbar-collapse");
+      const bsCollapse = bootstrap.Collapse.getInstance(menu);
+
+      if (bsCollapse) {
+        bsCollapse.hide();
+      }
     }
   });
 });
-
 const btn_enviar = document.getElementById("btn-enviar")
 btn_enviar.onclick = function(){
     alert("Contaco Enviado con exito")
