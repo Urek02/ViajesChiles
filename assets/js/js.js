@@ -23,3 +23,7 @@ const btn_enviar = document.getElementById("btn-enviar")
 btn_enviar.onclick = function(){
     alert("Contaco Enviado con exito")
 }
+/* jquery para ocultar destacados*/
+$(".card-body").on("click",function(){
+    $(this).find(".card-text").toggle();
+})
